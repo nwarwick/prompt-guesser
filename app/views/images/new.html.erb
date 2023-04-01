@@ -1,0 +1,6 @@
+<%= turbo_frame_tag "image" do %>
+  <div class='grid gap-4 items-center justify-center'>
+    <%= image_tag @image_url, class: 'h-64' %>
+    <%= turbo_frame_tag "guess", src: new_guesses_path %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "guess" do %>
+  <%= render "form" %>
+  <% if @guess.errors.full_messages %>
+    <p>
+      <%= @guess.errors.full_messages.first %>
+    </p>
+  <% end %>
+<% end %>
