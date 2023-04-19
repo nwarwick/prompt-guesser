@@ -22,6 +22,8 @@ img {
 html {
   @apply text-gray-700;
 }
+
+/* Buttons */
 .btn {
 	@apply font-bold py-2 px-4 rounded;
 }
@@ -48,4 +50,29 @@ html {
 
 .btn-secondary:active {
   @apply bg-emerald-600 border-emerald-600 text-white;
+}
+
+/* Links */
+.link {
+  @apply text-emerald-400; 
+}
+
+.link:hover {
+  @apply text-emerald-500; 
+}
+
+.link:active {
+  @apply text-emerald-600; 
+}
+
+/* Layout */
+html, body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+footer {
+  margin: auto auto 0;
+  padding: 20px;
 }
