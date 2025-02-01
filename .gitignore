@@ -37,3 +37,7 @@
 
 .DS_Store
 .env
+
+/config/credentials/development.key
+
+/config/credentials/production.key
