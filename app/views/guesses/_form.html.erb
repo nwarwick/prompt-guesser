@@ -1,5 +1,5 @@
-<%= form_with model: @guess, class: 'form grid gap-4 w-64'  do |form| %>
-  <%= form.text_area :text, size: "60x10", class: 'textarea h-32 w-full', placeholder: 'Guess the prompt used to generate the image.' %>
-  <%= form.submit 'Submit Guess', class: 'btn btn-primary' %>
+<%= form_with model: @guess, class: "flex flex-col gap"  do |form| %>
+  <%= form.text_area :text, size: "60x10", class: "input", placeholder: 'Guess the prompt used to generate the image.' %>
+  <%= form.submit 'Submit Guess', class: 'btn btn--primary' %>
   <p><%= notice %></p>
 <% end %>
