@@ -1,8 +1,0 @@
-.anchor {
-    color: var(--color-link);
-    text-decoration: underline;
-
-    &:hover {
-        color: var(--color-link-hover);
-    }
-}

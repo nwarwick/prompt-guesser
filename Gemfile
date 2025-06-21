@@ -65,3 +65,5 @@ group :test do
 end
 
 gem "css-zero", "~> 1.0"
+
+gem "dockerfile-rails", ">= 1.7", :group => :development
