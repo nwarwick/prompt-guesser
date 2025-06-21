@@ -1,7 +1,6 @@
 .btn {
   --btn-background: var(--color-bg);
   --hover-color: oklch(from var(--btn-background) calc(l * .95) c h);
-
   align-items: center;
   background-color: var(--btn-background);
   block-size: var(--btn-block-size, auto);
@@ -27,6 +26,7 @@
 
   &:hover {
     background-color: var(--btn-hover-color, var(--hover-color));
+    cursor: pointer;
   }
 
   &:focus-visible {
@@ -44,6 +44,7 @@
   --btn-border-color: transparent;
   --btn-color: var(--color-text-reversed);
   --btn-icon-color: var(--color-filter-text-reversed);
+  --btn-hover-color: var(--color-primary-dark);
 }
 
 .btn--secondary {
@@ -80,6 +81,15 @@
 
 .btn--icon {
   --btn-padding: var(--size-2);
+}
+
+.btn--amorphous {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.btn--amorphous:hover {
+  border-radius: 30% 70% 40% 60% / 70% 40% 60% 30%;
 }
 
 [aria-busy=true] .btn--loading:disabled {

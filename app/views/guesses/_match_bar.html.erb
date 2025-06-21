@@ -1,6 +1,6 @@
-<p>Match score:</p>
-<div class="bg-slate-200 h-16 rounded">
-  <div class="flex items-center px-2 bg-emerald-400 h-16 rounded-l" style="width:<%= score %>%">
-    <span class='absolute left-0 right-0 mx-auto w-full'><%= score %>%</span>
+<p class="font-bold mb-1">Match score:</p>
+<div class="relative score-bar">
+  <div class="score-bar__value-bar" style="width: <%= score %>%;">
+    <span class="score-bar__value"><%= score %>%</span>
   </div>
 </div>

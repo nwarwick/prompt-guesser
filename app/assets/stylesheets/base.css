@@ -13,7 +13,7 @@
   --color-highlight: var(--yellow-200);
 
   /* Accent colors */
-  --color-primary: var(--teal-600);
+  --color-primary: var(--emerald-500);
   --color-secondary: var(--zinc-100);
   --color-negative: var(--red-600);
   --color-positive: var(--green-600);
@@ -77,3 +77,4 @@ body {
 ::selection {
   background-color: var(--color-selected);
 }
+

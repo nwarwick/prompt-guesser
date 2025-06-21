@@ -1,0 +1,22 @@
+.score-bar {
+    background-color: var(--color-border-light);
+    border-radius: var(--rounded-md);
+    height: 3rem;
+    margin-bottom: 2rem;
+
+    .score-bar__value-bar {
+        background-color: var(--color-primary);
+        border-radius: var(--rounded-md);
+        height: 100%;
+    }
+
+    .score-bar__value {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--text-sm);
+        font-weight: var(--font-medium);
+    }
+  }
