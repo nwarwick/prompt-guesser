@@ -1,0 +1,59 @@
+# Cursor.sh custom rules
+
+# Ignore specific files or directories
+ignore:
+  - node_modules
+  - build
+  - dist
+  - .git
+  - log
+  - tmp
+  - public/packs
+  - storage
+  - coverage
+  - .DS_Store
+  - .env
+
+
+# Define custom file associations
+associations:
+  .erb: ruby
+  .rake: ruby
+  .gemspec: ruby
+  .ru: ruby
+  .builder: ruby
+  .jbuilder: ruby
+  .js: javascript
+  .ts: typescript
+  .scss: css
+  .sass: css
+  .css: css
+
+# Set maximum token limit for completions
+max_tokens: 8192
+
+# Enable or disable specific features
+features:
+  autocomplete: true
+  codeActions: true
+  hover: true
+
+# Custom prompts for specific file types
+prompts:
+  ruby: "You are an expert Ruby on Rails developer working with Rails 8. Please provide idiomatic and readable Ruby and Rails code, following the rubocop omakase style guide. Assume usage of Hotwire and Turbo where applicable."
+  javascript: "You are a JavaScript expert working in a Rails 8 environment with import maps and Hotwire."
+  html: "You are working with Rails 8, Turbo, and Tailwind CSS. Use semantic HTML and ensure all classes are Tailwind-compliant."
+  css: "You are working with Tailwind CSS in a Rails 8 project. Prefer utility classes and avoid custom CSS unless strictly necessary."
+
+  sql: "You are writing SQL for a Rails 8 application using PostgreSQL. Use clear, performant, and idiomatic SQL."
+  yaml: "You are editing configuration files for a Rails 8 project. Follow YAML best practices and keep comments clear."
+
+
+# Framework versions
+frameworks:
+  rails: "8"
+  tailwind: "latest"
+
+# Additional context for the AI
+
+# Add any other custom rules or configurations as needed
