@@ -1,5 +1,5 @@
 <%= turbo_frame_tag "image" do %>
-  <div class="flex flex-col gap">
+  <div class="flex flex-col gap image-container">
     <%= image_tag @image_url, class: "rounded-md" %>
     <%= turbo_frame_tag "guess", src: new_guesses_path %>
   </div>

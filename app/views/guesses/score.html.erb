@@ -1,8 +1,8 @@
 <%= turbo_frame_tag "guess" do %>
-  <div class="grid items-center gap-4 w-64">
+  <div class="score">
     <%= render 'match_bar', score: @score %>
-    <a href="/game" class='btn btn-secondary' data-turbo-frame="_top">Play Again</a>
-    <div class="text-left grid gap-4">
+    <a href="/game" class='btn btn--primary btn--amorphous m-auto' data-turbo-frame="_top">Play again</a>
+    <div class="score__details">
       <p>
         <span class="font-bold block">Your guess: </span>
         <%= @guess.text %>

@@ -1,5 +1,5 @@
 <%= form_with model: @guess, class: "flex flex-col gap"  do |form| %>
-  <%= form.text_area :text, size: "60x10", class: "input", placeholder: 'Guess the prompt used to generate the image.' %>
-  <%= form.submit 'Submit Guess', class: 'btn btn--primary' %>
+  <%= form.text_area :text, rows: 2, required: true, class: "input", placeholder: 'Guess the prompt used to generate the image.' %>
+  <%= form.submit 'Submit guess', class: 'btn btn--primary btn--amorphous m-auto' %>
   <p><%= notice %></p>
 <% end %>
