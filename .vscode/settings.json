@@ -1,7 +1,10 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#1E3310",
-        "titleBar.activeBackground": "#2A4816",
-        "titleBar.activeForeground": "#F7FBF4"
-    }
+    "[ruby]": {
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnSave": true
+    },
+    "rubyLsp.formatter": "rubocop",
+    "rubyLsp.rubyVersionManager": {
+        "identifier": "asdf"
+    },
 }
